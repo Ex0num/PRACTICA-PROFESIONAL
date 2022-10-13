@@ -1,0 +1,56 @@
+<body id="body">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title id="main-tittle">Mis Fotos</ion-card-title>
+    </ion-card-header>
+    <ion-button class="main-button" color="medium" (click)="volver()">Volver</ion-button>
+  </ion-card>
+
+  <ion-content color="medium">
+    <ion-card style="margin-top: 1rem; border-radius: 10px;" id="main-own-card">
+
+      <div id="cosasPropias">
+        
+        <ion-row style="width: 100%; background-color: #9db3b5; font-weight: bold;">
+          <ion-col>
+
+            <ion-card id="main-container">
+              <ion-card-title class="own-tittle">Cosas lindas subidas</ion-card-title>
+                  <ion-list id="item-list">
+                    <ion-item class="own-itemloaded" color="medium" *ngFor="let cosaFea of cosasFeasDelUser; let i = index"> 
+                      <p class="info-container">
+                        <img class="own-imgloaded" src={{cosaFea.foto}}> 
+                      </p>
+                    </ion-item>
+                  </ion-list>
+            </ion-card>
+
+          </ion-col>
+        </ion-row>
+
+        <ion-row offset="1" size=10>
+          <div style="width: 100%; height: 2px; background-color: azure;" ></div>
+        </ion-row>
+
+        <ion-row style="width: 100%; background-color: #9db3b5; font-weight: bold;">
+          <ion-col>
+
+              <ion-card id="main-container">
+                <ion-card-title class="own-tittle">Cosas feas subidas</ion-card-title>
+                    <ion-list id="item-list">
+                      <ion-item class="own-itemloaded" color="medium" *ngFor="let cosaLinda of cosasLindasDelUser; let i = index"> 
+                        <p class="info-container">
+                          <img class="own-imgloaded" src={{cosaLinda.foto}}> 
+                        </p>
+                      </ion-item>
+                    </ion-list>
+              </ion-card>
+
+        </ion-col>
+      </ion-row>
+
+      </div>
+    </ion-card>
+  </ion-content>
+  
+</body>

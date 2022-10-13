@@ -1,0 +1,77 @@
+#body
+{
+    background-color: #58787a;
+    text-align: center;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main-container
+{
+    border-radius: 20px;
+}
+
+.main-button
+{
+    margin-bottom: 1rem;
+    width: 40%;
+    --border-radius: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main-tittle
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: oblique;
+    font-variant: small-caps;
+    background-color: #58787a;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#item-list
+{   
+    height: 100%;
+    margin-bottom: 8rem;
+}
+
+
+.itemloaded
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 5%;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.imgloaded
+{
+    margin-top: 1rem;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.info-container
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+.buttonloaded
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1rem;
+    width: 100%;
+    height: 2rem;
+    --border-radius: 20px;
+}

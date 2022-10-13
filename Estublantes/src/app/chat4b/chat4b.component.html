@@ -1,0 +1,30 @@
+<body id="body">
+  <ion-card id="card-header">
+    <ion-card-header>
+      <ion-card-title id="main-tittle">Bienvenido/a al chat del aula <br> PPS-4B</ion-card-title>
+    </ion-card-header>
+    <ion-button id="comeback-button" color="warning" (click)="volver()">Volver</ion-button>
+  </ion-card>
+
+  <ion-card id="card-container-chat">
+    <!-- <ion-card-header id="card-header-chat">
+      <ion-card-title>¡Hola!, {{usuario}}</ion-card-title>
+    </ion-card-header> -->
+
+    <ion-content>
+        <ion-card id="card-chat">
+        <ion-card-content>
+          <div>
+            <ul id="chat-mensajes2">
+              
+            </ul>
+          </div>
+          
+          </ion-card-content>
+        </ion-card>
+      <p id="lbl-error2" hidden>¡Mensaje muy largo! (Máximo 21 caracteres)</p>
+      <ion-input [(ngModel)]="mensaje" [ngModelOptions]="{standalone: true}" type="text" placeholder="Escribí tu mensaje acá..." color="medium" id="txtBox-chat"></ion-input>
+      <ion-button id="btn-send" color="warning" (click)="sendMessage()">Enviar</ion-button>
+  </ion-content>
+  </ion-card>
+</body>

@@ -1,0 +1,67 @@
+<body id="body">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title id="main-tittle">Gráficos</ion-card-title>
+    </ion-card-header>
+    <ion-button class="main-button" color="medium" (click)="volver()">Volver</ion-button>
+  </ion-card>
+
+  <ion-card style="margin-top: 1rem; border-radius: 10px;">
+
+    <ion-row offset="1" size=10>
+      <div style="width: 100%; height: 2px; background-color: azure;" ></div>
+    </ion-row>
+
+    <div id="graphs" hidden>
+      <ion-row style="width: 100%; background-color: #9db3b5; font-weight: bold;">
+        <ion-col>
+          <div class="chartjs-block">
+          <canvas id="barChart" baseChart 
+              [datasets]="barChartData" 
+              [labels]="barChartLabels" 
+              [options]="barChartOptions" 
+              [legend]="barChartLegend"
+              [type]="barChartType">
+          </canvas>
+        </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row offset="1" size=10>
+        <div style="width: 100%; height: 2px; background-color: azure;" ></div>
+      </ion-row>
+
+      <ion-row style="width: 100%; background-color: #8d9d9f; font-weight: bold;">
+        <ion-col>
+          <div class="chart-wrapper">
+            <canvas id="pieChart" baseChart
+            [datasets]="pieChartData"  
+            [labels]="pieChartLabels" 
+            [options]="pieChartOptions"
+            [legend]="pieChartLegend" 
+            [type]="pieChartType">
+          </canvas>
+        </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <ion-row offset="1" size=10>
+      <div style="width: 100%; height: 2px; background-color: azure;" ></div>
+    </ion-row>
+
+    <ion-row hidden>
+      <ion-col>
+        <img id="fotoCorrespondiente">
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+  
+
+  <ion-content color="medium">
+    <ion-card id="main-container">
+
+    </ion-card>
+  </ion-content>
+</body>

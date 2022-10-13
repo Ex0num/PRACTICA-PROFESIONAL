@@ -1,0 +1,59 @@
+#body
+{
+    background-color: black;
+}
+
+#card-main
+{
+    margin-top: 1rem;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    display: flex;
+    background-color: whitesmoke;
+    height: 80%;
+    border-radius: 40px;
+}
+
+#btn-security
+{
+    height: 95%;
+    width: 95%;
+    --border-radius: 40px;
+    padding: 1rem;
+    font-size: 37px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.candado
+{
+    height: 200px;
+    width: 200px;
+}
+
+#card-desactivar
+{
+    border-radius: 40px;
+    height: 15%;
+}
+
+#input-contraseña
+{
+    align-self: center;
+    text-align: center;
+    border-radius: 30px;
+    width: 85%;
+    height: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 8%;
+    margin-top: 0.8rem;
+}
+
+#btnDesactivar
+{
+    width: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --border-radius: 30px;
+    margin-left: 8%;
+}

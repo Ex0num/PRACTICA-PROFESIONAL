@@ -1,0 +1,69 @@
+//CONTAINERS
+#body
+{
+    background-color: #d5bdd5;
+}
+
+#main-container
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid black;
+    // background: rgb(106,72,124);
+    // background: radial-gradient(circle, rgba(106,72,124,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#main-card2
+{
+    background: rgb(106,72,124);
+    background: radial-gradient(circle, rgba(106,72,124,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+//DATA FIELDS
+
+.comeback
+{
+    width: 95%;
+    margin-top: 0.5rem;
+}
+
+.upload-user
+{
+    width: 90%;
+    margin-left: 4.5%;
+    margin-bottom: 1rem;
+}
+
+.escanear-user
+{
+    width: 90%;
+    margin-left: 4.5%;
+    margin-bottom: 3rem;
+}
+
+#card-header
+{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#card-content
+{
+    text-align: center;
+}
+
+.data
+{
+    border: 1px solid #6a487c;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.data-file
+{
+    border-radius: 10px;
+    
+}

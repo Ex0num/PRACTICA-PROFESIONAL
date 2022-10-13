@@ -1,0 +1,46 @@
+#body
+{
+  background-color: #d5bdd5;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#main-container
+{
+  margin-top: 50%;
+  animation: opacity 3.5s linear;
+  color: black;
+}
+
+img
+{
+  width: 50%;
+}
+
+@keyframes opacity
+{
+  0% {
+    opacity: 0;
+  }
+  15%{
+    opacity: 0.12;
+  }
+  25%{
+    opacity: 0.25;
+    transform: translatex(999px);
+    transform: translatey(999px);
+  }
+  55%{
+    opacity: 0.50;
+  }
+  75%{
+    opacity: 0.75;
+    transform: translatex(-999px);
+    transform: translatey(-999px);
+  }
+  100%{
+    opacity: 1;
+  }
+}

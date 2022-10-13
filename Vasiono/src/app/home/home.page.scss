@@ -1,0 +1,73 @@
+#body
+{
+    background-color: #58787a;
+    text-align: center;
+}
+
+#main-card
+{
+    height: 97%;
+}
+
+#main2-card
+{
+    background: rgb(88,120,122);
+    background: radial-gradient(circle, rgba(88,120,122,1) 27%, rgba(122,151,153,1) 55%, rgba(88,120,122,1) 74%, rgba(88,120,122,1) 94%);
+    height: 97%;
+    color: white;
+}
+
+#main-card-2
+{
+    border-radius: 30px;
+    margin-top: 3rem;
+    height: 50%;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+#card-main-content
+{
+    width: 100%;
+    border-radius: 40px;
+}
+
+#main-card-header
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: oblique;
+    font-variant: small-caps;
+}
+
+#mail,#password
+{
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#btnIngresar, #btnRegistrarse,#btnHacerMagia,#btnAdmin,#btnUsuario,#btnMal
+{
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#txtError 
+{
+  margin-top: 15px;
+  color: red;
+  margin-bottom: 3.5px;
+}
+
+#txtSatisfaccion
+{
+  margin-top: 15px;
+  color: green;
+  margin-bottom: 3.5px;
+}

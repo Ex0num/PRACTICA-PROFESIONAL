@@ -1,0 +1,37 @@
+<body id="body">
+  <ion-card id="main-card">
+    <ion-card id="main2-card">
+      <ion-card-header id="main-card-header">
+          Vasiono
+      </ion-card-header>
+
+      <ion-card-content id="card-main-content">
+        <ion-input [(ngModel)]="mailIngresado" id="mail" type="text" placeholder="Correo"></ion-input>
+        <ion-input [(ngModel)]="passwordIngresado" id="password" type="password" placeholder="Contraseña"></ion-input>
+
+        <p color="dark" id="txtError" hidden>Mensaje de error</p>
+        <p color="dark" id="txtSatisfaccion" hidden>Mensaje de satisfaccion</p>
+
+        <ion-grid>
+          <ion-col>
+            <ion-button class="btnLogin" id="btnIngresar" (click)="loginAuthFirebase()" color="danger">Ingresar</ion-button>
+            <ion-button class="btnLogin" id="btnRegistrarse" (click)="registerAuthFirebase()" color="danger">Registrarse</ion-button>
+
+            <ion-button id="btnHacerMagia" class="btnTemporal" (click)="hacerMagia()" color="danger">HACER MAGIA</ion-button>
+            <ion-button id="btnAdmin" class="btnTemporal" color="light" hidden (click)="adminAutocomplete()" color="danger">Administrador</ion-button>
+            <ion-button id="btnUsuario" class="btnTemporal" color="light" hidden (click)="userAutocomplete()" color="danger">Usuario</ion-button>
+            <ion-button id="btnMal" class="btnTemporal" color="light" hidden (click)="testerAutocomplete()" color="danger">Tester</ion-button>
+          </ion-col>
+        </ion-grid>
+        
+        <ion-card id="main-card-2">
+          <ion-card-content>
+                  <ion-img src="/assets/icon/Vasiono.png" alt="Imagen de app" id="main-image"></ion-img>
+              </ion-card-content>
+        </ion-card>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-card>
+  
+</body>

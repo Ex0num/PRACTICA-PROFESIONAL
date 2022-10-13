@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Cuirobo</string>
+    <string name="title_activity_main">Cuirobo</string>
+    <string name="package_name">com.Cuirobo.app</string>
+    <string name="custom_url_scheme">com.Cuirobo.app</string>
+</resources>

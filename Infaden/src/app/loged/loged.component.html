@@ -1,0 +1,75 @@
+
+    <ion-content id="body" color="dark">
+      <ion-card id="header-card">
+        <ion-list id="main-list">
+          <ion-item>
+            <ion-select #lenguaje placeholder="Idioma" id="item-lenguaje-list" (ionChange)="actualizarLenguaje(lenguaje.value)">
+              <ion-select-option value="español" id="español">🇦🇷</ion-select-option>
+              <ion-select-option value="portugues" id="portugues">🇧🇷</ion-select-option>
+              <ion-select-option value="ingles" id="ingles">🇺🇸</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-select #tema placeholder="Tema" id="item-tema-list" (ionChange)="actualizarTema(tema.value)">
+              <ion-select-option value="animales" id="animales">🦁</ion-select-option>
+              <ion-select-option value="colores" id="colores">🔴</ion-select-option>
+              <ion-select-option value="numeros" id="numeros">🔢</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+  
+      <ion-card id="content-main-card">
+        <ion-grid id="main-grid">
+          <ion-col class="col-main-grid">
+            <ion-row class="row-main-grid">
+              <img class="item-img" id="item1" src="../../assets/buttons/animales/leon.jpg" width="200" height="180" (click)="itemClickeado(1)">
+              <img class="item-img2" id="item2" src="../../assets/buttons/animales/perro.PNG" width="200" height="180" (click)="itemClickeado(2)">
+            </ion-row>   
+          </ion-col>
+          <ion-col class="col-main-grid">
+            <ion-row class="row-main-grid">
+              <img class="item-img" id="item3" src="../../assets/buttons/animales/gato.jpg" width="200" height="180" (click)="itemClickeado(3)">
+              <img class="item-img2" id="item4" src="../../assets/buttons/animales/elefante.PNG" width="200" height="180" (click)="itemClickeado(4)">
+            </ion-row>   
+          </ion-col>
+          <ion-col class="col-main-grid">
+            <ion-row class="row-main-grid">
+              <img class="item-img" id="item5" src="../../assets/buttons/animales/hormiga.jpg" width="200" height="180" (click)="itemClickeado(5)">
+              <img class="item-img2" id="item6" src="../../assets/buttons/animales/pajaro.jpg" width="200" height="180" (click)="itemClickeado(6)">
+            </ion-row>   
+          </ion-col>
+        </ion-grid>
+      </ion-card>
+
+
+      <ion-card id="content-main-card2">
+        <ion-grid id="main-grid2">
+
+          <ion-col class="col-main-grid2">
+            <ion-row class="fila">
+              <ion-row class="celda" id="pos1"><img class="item-invertido" id="item1-2" src="../../assets/buttons/animales/leon.jpg" width="200" height="180" (click)="itemClickeado(1)"></ion-row>
+              <ion-row class="celda"><img class="item-invertido" id="item2-2" src="../../assets/buttons/animales/perro.PNG" width="200" height="180" (click)="itemClickeado(2)"></ion-row>
+              <ion-row class="celda"><img class="item-invertido" id="item3-2" src="../../assets/buttons/animales/gato.jpg" width="200" height="180" (click)="itemClickeado(3)"></ion-row>
+            </ion-row>
+          </ion-col>
+
+          <ion-col class="col-main-grid2">
+            <ion-row class="fila">
+              <ion-row class="celda" id="pos2"><img class="item-invertido" id="item4-2" src="../../assets/buttons/animales/elefante.PNG" width="200" height="180" (click)="itemClickeado(4)"></ion-row>
+              <ion-row class="celda"><img class="item-invertido" id="item5-2" src="../../assets/buttons/animales/hormiga.jpg" width="200" height="180" (click)="itemClickeado(5)"></ion-row>
+              <ion-row class="celda"><img class="item-invertido" id="item6-2" src="../../assets/buttons/animales/pajaro.jpg" width="200" height="180" (click)="itemClickeado(6)"></ion-row>
+            </ion-row>
+          </ion-col>
+
+        </ion-grid>
+      </ion-card>
+
+    </ion-content>
+      
+<!-- fab placed to the bottom start -->
+<ion-fab class="redireccionador" vertical="bottom" horizontal="start" slot="fixed" (click)="logOut()">
+  <ion-fab-button color="light">
+    <ion-icon name="arrow-back-circle"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

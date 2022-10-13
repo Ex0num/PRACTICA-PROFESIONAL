@@ -1,0 +1,28 @@
+<body id="body">
+
+  <ion-content color="warning">
+    <ion-card id="main-container">
+      <ion-card id="main-card2" color="warning">
+
+        <ion-card>
+          <ion-card-header id="card-header">         
+            <ion-card-title>ALTA DE UN USUARIO</ion-card-title>
+            <ion-button class="comeback" color="warning" (click)="volver()">Volver</ion-button>
+          </ion-card-header>
+          <ion-card-content id="card-content">
+            <ion-input class="data" placeholder="Nombre" [(ngModel)]="nombre" [ngModelOptions]="{standalone: true}"></ion-input>
+            <ion-input class="data" placeholder="Apellido" [(ngModel)]="apellido" [ngModelOptions]="{standalone: true}"></ion-input>
+            <ion-input class="data" placeholder="Mail" [(ngModel)]="mail" [ngModelOptions]="{standalone: true}"></ion-input>
+            <ion-input class="data" placeholder="DNI" type="number" [(ngModel)]="dni" [ngModelOptions]="{standalone: true}"></ion-input>
+            <ion-input class="data" placeholder="Clave" [(ngModel)]="clave" [ngModelOptions]="{standalone: true}"></ion-input>
+            <ion-input class="data-file" type="file" name="myImage" accept="image/png, image/gif, image/jpeg" (ionChange)="fotoSubida($event)"></ion-input>
+          </ion-card-content>
+          <ion-button class="upload-user" color="warning" (click)="subirUsuario()">Subir usuario</ion-button>
+          <ion-button class="escanear-user" color="warning" (click)="escanearDNI()">Escanear DNI</ion-button>
+        </ion-card>
+
+      </ion-card>
+    </ion-card>
+  </ion-content>
+
+</body>

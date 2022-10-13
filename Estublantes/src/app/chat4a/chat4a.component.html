@@ -1,0 +1,56 @@
+<body id="body">
+  <ion-card id="card-header">
+    <ion-card-header>
+      <ion-card-title id="main-tittle">Bienvenido/a al chat del aula <br> PPS-4A</ion-card-title>
+    </ion-card-header>
+    <ion-button id="comeback-button" color="danger" (click)="volver()">Volver</ion-button>
+  </ion-card>
+
+  <ion-card id="card-container-chat">
+    <!-- <ion-card-header id="card-header-chat">
+      <ion-card-title>¡Hola!, {{usuario}}</ion-card-title>
+    </ion-card-header> -->
+
+    <ion-content>
+        <ion-card id="card-chat">
+        <ion-card-content>
+            <div>
+                <ul id="chat-mensajes">
+                
+                </ul>
+            </div>
+           
+          </ion-card-content>
+        </ion-card>
+        <p id="lbl-error" hidden>¡Mensaje muy largo! (Máximo 21 caracteres)</p>
+        <ion-input [(ngModel)]="mensaje" [ngModelOptions]="{standalone: true}" type="text" placeholder="Escribí tu mensaje acá..." color="medium" id="txtBox-chat"></ion-input>
+        <ion-button id="btn-send" color="danger" (click)="sendMessage2()">Enviar</ion-button>
+    </ion-content>
+  </ion-card>
+</body>
+
+
+<!-- <ion-item-group>
+  <ion-row class="username">Martina Perz 10/4</ion-row>
+  <ion-row class="message-from-other">Que buen chat che!!</ion-row>
+</ion-item-group>
+<ion-item-group>
+  <ion-row class="username">Gordo fashi 10/4</ion-row>
+  <ion-row class="message-from-other">ta copado kreo</ion-row>
+</ion-item-group>
+<ion-item-group id="myData">
+  <ion-row class="username"></ion-row>
+  <ion-row class="message-from-mine">Escribí bien burro!! jaja</ion-row>
+</ion-item-group>
+<ion-item-group>
+  <ion-row class="username">Maximiliano 11/4</ion-row>
+  <ion-row class="message-from-other">weee, jaja quien era</ion-row>
+</ion-item-group>
+<ion-item-group>
+  <ion-row class="username">Martina Perz 12/4</ion-row>
+  <ion-row class="message-from-other">Bueno, yo le tengo fé... qsyo</ion-row>
+</ion-item-group>
+<ion-item-group>
+  <ion-row class="username">Maximiliano 14/4</ion-row>
+  <ion-row class="message-from-other">Esta es la mas dificil x abismooo bldo... lpm. Suerte capo jaja</ion-row>
+</ion-item-group> -->

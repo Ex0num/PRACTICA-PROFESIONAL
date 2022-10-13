@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Infaden</string>
+    <string name="title_activity_main">Infaden</string>
+    <string name="package_name">com.Infaden.app</string>
+    <string name="custom_url_scheme">com.Infaden.app</string>
+</resources>

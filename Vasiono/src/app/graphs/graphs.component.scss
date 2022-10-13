@@ -1,0 +1,33 @@
+#body
+{
+    background-color: #58787a;
+    text-align: center;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main-tittle
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: oblique;
+    font-variant: small-caps;
+    background-color: #58787a;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-button
+{
+    margin-bottom: 1rem;
+    width: 40%;
+    --border-radius: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main-container
+{
+    border-radius: 20px;
+}

@@ -1,0 +1,32 @@
+<body id="body">
+  <ion-card id="main-card">
+    <ion-card id="main2-card">
+      <ion-card-content id="card-main-content">
+
+        <ion-card-header id="main-card-header">
+            Inicie sesión
+        </ion-card-header>
+
+        <ion-input [(ngModel)]="mailIngresado" id="mail" type="text" placeholder="Correo"></ion-input>
+        <ion-input [(ngModel)]="passwordIngresado" id="password" type="password" placeholder="Contraseña"></ion-input>
+  
+        <p color="dark" id="txtError" hidden>Mensaje de error</p>
+        <p color="dark" id="txtSatisfaccion" hidden>Mensaje de satisfaccion</p>
+  
+        <ion-grid>
+          <ion-col>
+            <ion-button class="btnLogin" id="btnIngresar" (click)="loginAuthFirebase()" color="medium">Ingresar</ion-button>
+            <ion-button class="btnLogin" id="btnRegistrarse" (click)="registerAuthFirebase()" color="medium">Registrarse</ion-button>
+          </ion-col>
+        </ion-grid>
+         
+        <ion-row id="row-fast-access">
+          <ion-fab-button class="btnFastAccess" color="medium" (click)="adminAutocomplete()">A</ion-fab-button>
+          <ion-fab-button class="btnFastAccess" color="medium" (click)="userAutocomplete()">U</ion-fab-button>
+          <ion-fab-button class="btnFastAccess" color="medium" (click)="testerAutocomplete()">T</ion-fab-button>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-card>
+  
+</body>

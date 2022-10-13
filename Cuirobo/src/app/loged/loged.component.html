@@ -1,0 +1,23 @@
+<body id="body">
+  <ion-card id="card-main">
+    <ion-button id="btn-security" color="dark">
+      <span class="test">
+        <ion-icon name="lock-open" class="candado" id="lock-open" color="light" (click)="comenzar()"></ion-icon>
+        <ion-icon name="lock-closed"  class="candado" id="lock-closed" color="light" hidden></ion-icon>
+      </span>
+    </ion-button>
+  </ion-card>
+
+  <ion-card id="card-desactivar" hidden>
+    <input id="input-contraseña" placeholder="Ingrese contraseña" [(ngModel)]="clave">
+    <ion-button id="btnDesactivar" color="dark" (click)="desactivar()">DESACTIVAR</ion-button>
+  </ion-card>
+
+</body>
+
+  <!-- fab placed to the bottom start -->
+  <ion-fab class="redireccionador" vertical="bottom" horizontal="start" slot="fixed" (click)="logOut()">
+    <ion-fab-button color="light">
+      <ion-icon name="arrow-back-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>

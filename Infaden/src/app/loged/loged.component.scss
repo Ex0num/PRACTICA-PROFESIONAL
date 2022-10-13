@@ -1,0 +1,182 @@
+#body
+{
+    // --background-color: #4C0033;
+    text-align: center;
+}
+
+#header-card
+{
+    color: white;
+}
+
+#content-main-card
+{
+    margin-top: 0.5rem;
+    background-color: #4C0033;
+    border-radius: 20px;
+}
+
+#main-list
+{
+    background-color: pink;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: -20%;
+    margin-top: -5%;
+    --color: white;
+}
+
+#item-tema-list, #item-lenguaje-list
+{
+    color: white;
+}
+
+#main-grid
+{
+    width: 100%;
+    height: 95%;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.row-main-grid
+{
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 10px;
+    // border: 1px solid black;
+    height: max-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.item
+{
+    height: 8rem;
+    width: 43%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    margin-right: 8px;
+    margin-left: 8px;
+    --background: url('/assets/icon/Infaden.jpg') no-repeat center/cover fixed;
+}
+
+.item-img
+{
+    border-radius: 10px;
+    width: 45% ;
+}
+
+.item-img2
+{
+    border-radius: 10px;
+    margin-left: 1rem;
+    width: 45% ;
+}
+
+#main-list, #header-card
+{
+    background-color: #4C0033;
+    border-radius: 10px;
+    // border: 1px solid black;
+}
+
+#header-card
+{
+    margin-top: 2rem;
+    height: 5.6rem;
+    text-align: center;
+}
+
+#español, #portugues, #ingles
+{
+    --color: white;
+}
+
+// CELULAR ACOSTADO
+
+@media (min-width: 500px) and (max-width: 800px)
+{
+    #header-card
+    {
+        height: 3rem;
+        margin-top: 0.5rem;
+    }
+
+    #main-grid
+    {
+        display: none;
+    }
+
+    #main-grid2
+    {
+        display: block;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 499px)
+{
+    // #header-card
+    // {
+    //     height: 3rem;
+    //     margin-top: 0.5rem;
+    // }
+
+    #main-grid
+    {
+        display: block;
+    }
+
+    #main-grid2
+    {
+        display: none;
+    }
+}
+
+#main-grid2
+{
+    width: 100%;
+    height: 95%;
+    text-align: center;
+    margin-top: -1rem;
+    background-color: #4C0033;
+}
+
+.col-main-grid2
+{
+    width: 100%;
+}
+
+.item-invertido
+{
+    border-radius: 10px;
+    width: 92%;
+    height: 98%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#pos1,#pos2
+{
+    margin-left: 2%;
+}
+
+.celda
+{
+    align-items: center;
+    text-align: center;
+    width: 230px;
+    height: 110px;
+}
+
+.fila
+{
+    text-align: center;
+    align-items: center;
+    background-color: #4C0033;
+}

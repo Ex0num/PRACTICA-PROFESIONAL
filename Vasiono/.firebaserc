@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "pp-glg"
+  },
+  "targets": {
+    "pp-glg": {
+      "hosting": {
+        "app": [
+          "pp-glg"
+        ]
+      }
+    }
+  }
+}

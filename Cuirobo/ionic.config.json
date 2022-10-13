@@ -1,0 +1,7 @@
+{
+  "name": "Cuirobo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

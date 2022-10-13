@@ -1,0 +1,36 @@
+      
+<body id="body">
+  <ion-card id="content-main-card">
+    <ion-grid id="main-grid">
+      
+        <ion-row class="row-main-grid">
+          <img src="../../assets/cosaslindas.png" id="btnCosasLindas" (click)="cosasLindasClick()"> 
+        </ion-row>
+        <ion-row class="row-main-grid">
+          <img  src="../../assets/cosasfeas.png" id="btnCosasFeas" (click)="cosasFeasClick()"> 
+        </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+  <!-- fab placed to the bottom start -->
+  <ion-fab class="redireccionador" vertical="bottom" horizontal="start" slot="fixed" (click)="logOut()">
+    <ion-fab-button color="danger">
+      <ion-icon name="exit-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!-- fab placed to the bottom start -->
+  <ion-fab class="redireccionador" vertical="bottom" horizontal="end" slot="fixed" (click)="navigateToGraphs()">
+    <ion-fab-button color="danger">
+      <ion-icon name="bar-chart-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+   <!-- fab placed to the bottom start -->
+   <ion-fab class="redireccionador" vertical="top" horizontal="end" slot="fixed" (click)="navigateToOwnPhotos()">
+    <ion-fab-button color="danger">
+      <ion-icon name="briefcase-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</body>

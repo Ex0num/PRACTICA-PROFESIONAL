@@ -1,0 +1,72 @@
+#body
+{
+    background-color: #9bd3c2;
+    text-align: center;
+}
+
+#main-card
+{
+    height: 97%;
+    background: white;
+}
+
+#main-card-2
+{
+    height: 97%;
+    background: rgb(182,231,216);
+    background: linear-gradient(0deg, rgba(182,231,216,1) 0%, rgba(168,226,207,1) 45%, rgba(96,142,127,1) 100%);
+}
+
+.btnTemporal
+{
+    width: 97%;
+}
+
+#card-main-content
+{
+    margin-top: 35%;
+    width: 100%;
+}
+
+#main-card-header
+{
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    font-style: oblique;
+    font-variant: small-caps;
+}
+
+#mail,#password
+{
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: white;
+}
+
+#btnIngresar, #btnRegistrarse,#btnAdmin,#btnUsuario,#btnMal
+{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnIngresar, #btnRegistrarse
+{
+    width: 46%;
+    margin-right: 0.3rem;
+}
+
+#txtError 
+{
+  margin-top: 15px;
+  color: red;
+  margin-bottom: 3.5px;
+}
+
+#txtSatisfaccion
+{
+  margin-top: 15px;
+  color: green;
+  margin-bottom: 3.5px;
+}

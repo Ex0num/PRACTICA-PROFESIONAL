@@ -1,0 +1,7 @@
+{
+  "name": "Infaden",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

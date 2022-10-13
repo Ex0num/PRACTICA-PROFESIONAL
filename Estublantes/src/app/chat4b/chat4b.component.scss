@@ -1,0 +1,117 @@
+#body
+{
+    background-color: #ffd534;
+}
+
+#card-header
+{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+#comeback-button
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 90%;
+    --border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+#card-container-chat
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border-radius: 15px;
+    height: 80%;
+}
+
+#card-header-chat
+{
+    text-align: center;
+}
+
+.username
+{
+    margin-top: 1rem;
+    margin-bottom: -1.5rem;
+}
+
+#lbl-error
+{
+    align-self: center;
+    text-align: center;
+}
+
+#card-chat
+{
+    background-color: #f1e8ad;
+    color: black;
+    height: 70%;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    overflow: auto;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li
+{
+    width: 80%;
+    margin-top: 1rem;
+}
+
+// .message-from-other
+// {   
+//     padding: 0.8rem;
+//     width: 90%;
+//     background-color: white;
+//     margin-top: 1.6rem;
+//     border-radius: 20px;
+//     border-top-left-radius: 0px;
+//     font-size: 16px;
+// }
+
+// .message-from-mine
+// {
+//     padding: 0.8rem;
+//     width: 90%;
+//     background-color: #979fd6;
+//     margin-top: 1.6rem;
+//     border-radius: 20px;
+//     border-top-right-radius: 0px;
+//     font-size: 16px;
+//     margin-left: 10%;
+// }
+
+#txtBox-chat
+{
+    text-align: center;
+    padding: 0.5rem;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 15px;
+    background-color: #ffd534;
+    color: black;
+    font-size: 16px;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+#btn-send
+{
+    margin-left: 5%;
+    margin-top: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 90%;
+    --border-radius: 20px;
+    margin-bottom: 1rem;
+    height: 3.5rem;
+}

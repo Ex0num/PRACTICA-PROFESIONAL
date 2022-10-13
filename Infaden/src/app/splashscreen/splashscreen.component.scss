@@ -1,0 +1,35 @@
+#body
+{
+  background-color: #4C0033;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-container
+{
+  margin-top: 50%;
+  animation: float 2s infinite;
+  color: white;
+}
+
+img
+{
+  width: 50%;
+}
+
+@keyframes float 
+{
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-40px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+

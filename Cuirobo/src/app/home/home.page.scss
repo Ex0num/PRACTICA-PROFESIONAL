@@ -1,0 +1,92 @@
+#body
+{
+    background-color: #000000;
+    text-align: center;
+}
+
+#main-card
+{
+    height: 97%;
+}
+
+#main2-card
+{
+    height: 97%;
+    background: rgb(122,119,123);
+    background: radial-gradient(circle, rgba(122,119,123,1) 1%, rgba(142,142,143,1) 48%, rgba(197,196,198,1) 70%, rgba(202,202,202,0.2601190134256828) 100%);
+    border: 1px solid black;
+}
+
+#selector-magico
+{
+    background-color: #000000;
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 16px;
+}
+
+#main-card-2
+{
+    border-radius: 65px;
+    margin-top: 3rem;
+    height: 50%;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+}
+
+#card-main-content
+{
+    width: 100%;
+    border-radius: 40px;
+}
+
+#main-card-header
+{
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: oblique;
+    border-radius: 20px;
+    margin-top: 45%;
+}
+
+#mail,#password
+{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 1rem;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#selector-magico
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btnIngresar, #btnRegistrarse
+{
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#txtError 
+{
+  margin-top: 15px;
+  color: red;
+  margin-bottom: 3.5px;
+}
+
+#txtSatisfaccion
+{
+  margin-top: 15px;
+  color: green;
+  margin-bottom: 3.5px;
+}

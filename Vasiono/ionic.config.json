@@ -1,0 +1,7 @@
+{
+  "name": "Vasiono",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

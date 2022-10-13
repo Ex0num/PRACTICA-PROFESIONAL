@@ -1,0 +1,7 @@
+{
+  "name": "Admitodo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
