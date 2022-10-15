@@ -88,8 +88,8 @@
 
 #header-card
 {
-    margin-top: 2rem;
-    height: 5.6rem;
+    margin-top: 0.5rem;
+    height: 4rem;
     text-align: center;
 }
 
@@ -98,13 +98,27 @@
     --color: white;
 }
 
+//--
+
+#theme-selected
+{
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+#language-selected
+{
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+
 // CELULAR ACOSTADO
 
 @media (min-width: 500px) and (max-width: 800px)
 {
     #header-card
     {
-        height: 3rem;
+        height: 3.5rem;
         margin-top: 0.5rem;
     }
 
@@ -156,7 +170,7 @@
 {
     border-radius: 10px;
     width: 92%;
-    height: 98%;
+    height: 95%;
     margin-left: 10%;
     margin-top: 5%;
 }
@@ -170,8 +184,8 @@
 {
     align-items: center;
     text-align: center;
-    width: 230px;
-    height: 110px;
+    width: 225px;
+    height: 95px;
 }
 
 .fila

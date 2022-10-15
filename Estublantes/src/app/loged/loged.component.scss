@@ -1,25 +1,30 @@
 #body
 {
     background-color: #9bd3c2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #card-main
 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 1.5rem;
-    align-items: center;
-    text-align: center;
-    justify-content:center;
-    display: flex;
     background-color: whitesmoke;
     height: 90%;
     border-radius: 40px;
 }
 
+#aula-4a
+{
+    margin-top: 1.5rem;
+}
+
 .btn-class
 {
-    height: 90%;
-    width: 40%;
-    --border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1rem;
+    height: 300px;
+    width: 90%;
+    border-radius: 15px;
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 35px;
@@ -33,6 +38,6 @@
     --border-radius: 40px;
     padding: 1rem;
     font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
 }

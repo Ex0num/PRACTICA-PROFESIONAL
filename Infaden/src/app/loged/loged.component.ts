@@ -61,12 +61,54 @@ export class LogedComponent implements OnInit {
 
   actualizarLenguaje(lenguaje:string)
   {
+    let languageShowed = document.getElementById("language-showed");
+    
+    switch (lenguaje) 
+    {
+      case 'español':
+      {
+        languageShowed.innerHTML = '🇪🇸';
+        break;
+      }
+      case 'portugues':
+      {
+        languageShowed.innerHTML = '🇵🇹';
+        break;
+      }
+      case 'ingles':
+      {
+        languageShowed.innerHTML = '🇬🇧';
+        break;
+      }
+    }
+
     this.lenguajeActual = lenguaje;
     console.log(this.lenguajeActual);
   }
 
   actualizarTema(tema:string)
   {
+    let themeShowed = document.getElementById("theme-showed");
+
+    switch (tema) 
+    {
+      case 'animales':
+      {
+        themeShowed.innerHTML = '🦁';
+        break;
+      }
+      case 'colores':
+      {
+        themeShowed.innerHTML = '🔴';
+        break;
+      }
+      case 'numeros':
+      {
+        themeShowed.innerHTML = '🔢';
+        break;
+      }
+    }
+
     this.temaActual = tema;
     console.log(this.temaActual);
     this.actualizarBackground(this.temaActual)
@@ -90,7 +132,7 @@ export class LogedComponent implements OnInit {
                   case 1:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/esp/rojo.mp3', 'rojo.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/esp/rojo.mp3', 'rojo.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -98,7 +140,7 @@ export class LogedComponent implements OnInit {
                   case 2:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/esp/azul.mp3', 'azul.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/esp/azul.mp3', 'azul.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -106,7 +148,7 @@ export class LogedComponent implements OnInit {
                   case 3:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/esp/verde.mp3', 'verde.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/esp/verde.mp3', 'verde.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -114,7 +156,7 @@ export class LogedComponent implements OnInit {
                   case 4:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/esp/amarillo.mp3', 'amarillo.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/esp/amarillo.mp3', 'amarillo.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -122,7 +164,7 @@ export class LogedComponent implements OnInit {
                   case 5:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/esp/rosa.mp3', 'rosa.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/esp/rosa.mp3', 'rosa.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -130,7 +172,7 @@ export class LogedComponent implements OnInit {
                   case 6:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/esp/violeta.mp3', 'violeta.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/esp/violeta.mp3', 'violeta.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -146,7 +188,7 @@ export class LogedComponent implements OnInit {
                   case 1:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/esp/leon.mp3', 'leon.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/esp/leon.mp3', 'leon.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -154,7 +196,7 @@ export class LogedComponent implements OnInit {
                   case 2:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/esp/perro.mp3', 'perro.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/esp/perro.mp3', 'perro.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -162,7 +204,7 @@ export class LogedComponent implements OnInit {
                   case 3:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/esp/gato.mp3', 'gato.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/esp/gato.mp3', 'gato.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -170,7 +212,7 @@ export class LogedComponent implements OnInit {
                   case 4:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/esp/elefante.mp3', 'elefante.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/esp/elefante.mp3', 'elefante.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -178,7 +220,7 @@ export class LogedComponent implements OnInit {
                   case 5:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/esp/hormiga.mp3', 'hormiga.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/esp/hormiga.mp3', 'hormiga.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -186,7 +228,7 @@ export class LogedComponent implements OnInit {
                   case 6:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/esp/pajaro.mp3', 'pajaro.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/esp/pajaro.mp3', 'pajaro.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -202,7 +244,7 @@ export class LogedComponent implements OnInit {
                   case 1:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/esp/uno.mp3', 'uno.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/esp/uno.mp3', 'uno.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -210,7 +252,7 @@ export class LogedComponent implements OnInit {
                   case 2:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/esp/dos.mp3', 'dos.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/esp/dos.mp3', 'dos.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -218,7 +260,7 @@ export class LogedComponent implements OnInit {
                   case 3:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/esp/tres.mp3', 'tres.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/esp/tres.mp3', 'tres.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -226,7 +268,7 @@ export class LogedComponent implements OnInit {
                   case 4:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/esp/cuatro.mp3', 'cuatro.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/esp/cuatro.mp3', 'cuatro.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -234,7 +276,7 @@ export class LogedComponent implements OnInit {
                   case 5:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/esp/cinco.mp3', 'cinco.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/esp/cinco.mp3', 'cinco.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -242,7 +284,7 @@ export class LogedComponent implements OnInit {
                   case 6:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/esp/seis.mp3', 'seis.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/esp/seis.mp3', 'seis.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -266,7 +308,7 @@ export class LogedComponent implements OnInit {
                   case 1:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/ing/rojo.mp3', 'rojo.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/ing/rojo.mp3', 'rojo.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -274,7 +316,7 @@ export class LogedComponent implements OnInit {
                   case 2:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/ing/azul.mp3', 'azul.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/ing/azul.mp3', 'azul.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -282,7 +324,7 @@ export class LogedComponent implements OnInit {
                   case 3:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/ing/verde.mp3', 'verde.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/ing/verde.mp3', 'verde.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -290,7 +332,7 @@ export class LogedComponent implements OnInit {
                   case 4:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/ing/amarillo.mp3', 'amarillo.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/ing/amarillo.mp3', 'amarillo.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -298,7 +340,7 @@ export class LogedComponent implements OnInit {
                   case 5:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/ing/rosa.mp3', 'rosa.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/ing/rosa.mp3', 'rosa.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -306,7 +348,7 @@ export class LogedComponent implements OnInit {
                   case 6:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/ing/violeta.mp3', 'violeta.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/ing/violeta.mp3', 'violeta.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -322,7 +364,7 @@ export class LogedComponent implements OnInit {
                   case 1:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/ing/leon.mp3', 'leon.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/ing/leon.mp3', 'leon.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -330,7 +372,7 @@ export class LogedComponent implements OnInit {
                   case 2:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/ing/perro.mp3', 'perro.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/ing/perro.mp3', 'perro.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -338,7 +380,7 @@ export class LogedComponent implements OnInit {
                   case 3:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/ing/gato.mp3', 'gato.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/ing/gato.mp3', 'gato.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -346,7 +388,7 @@ export class LogedComponent implements OnInit {
                   case 4:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/ing/elefante.mp3', 'elefante.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/ing/elefante.mp3', 'elefante.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -354,7 +396,7 @@ export class LogedComponent implements OnInit {
                   case 5:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/ing/hormiga.mp3', 'hormiga.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/ing/hormiga.mp3', 'hormiga.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -362,7 +404,7 @@ export class LogedComponent implements OnInit {
                   case 6:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/ing/pajaro.mp3', 'pajaro.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/ing/pajaro.mp3', 'pajaro.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -378,7 +420,7 @@ export class LogedComponent implements OnInit {
                   case 1:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/ing/uno.mp3', 'uno.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/ing/uno.mp3', 'uno.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -386,7 +428,7 @@ export class LogedComponent implements OnInit {
                   case 2:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/ing/dos.mp3', 'dos.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/ing/dos.mp3', 'dos.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -394,7 +436,7 @@ export class LogedComponent implements OnInit {
                   case 3:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/ing/tres.mp3', 'tres.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/ing/tres.mp3', 'tres.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -402,7 +444,7 @@ export class LogedComponent implements OnInit {
                   case 4:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/ing/cuatro.mp3', 'cuatro.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/ing/cuatro.mp3', 'cuatro.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -410,7 +452,7 @@ export class LogedComponent implements OnInit {
                   case 5:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/ing/cinco.mp3', 'cinco.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/ing/cinco.mp3', 'cinco.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -418,7 +460,7 @@ export class LogedComponent implements OnInit {
                   case 6:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/ing/seis.mp3', 'seis.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/ing/seis.mp3', 'seis.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -443,7 +485,7 @@ export class LogedComponent implements OnInit {
                   case 1:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/por/rojo.mp3', 'rojo.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/por/rojo.mp3', 'rojo.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -451,7 +493,7 @@ export class LogedComponent implements OnInit {
                   case 2:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/por/azul.mp3', 'azul.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/por/azul.mp3', 'azul.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -459,7 +501,7 @@ export class LogedComponent implements OnInit {
                   case 3:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/por/verde.mp3', 'verde.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/por/verde.mp3', 'verde.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -467,7 +509,7 @@ export class LogedComponent implements OnInit {
                   case 4:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/por/amarillo.mp3', 'amarillo.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/por/amarillo.mp3', 'amarillo.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -475,7 +517,7 @@ export class LogedComponent implements OnInit {
                   case 5:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/por/rosa.mp3', 'rosa.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/por/rosa.mp3', 'rosa.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -483,7 +525,7 @@ export class LogedComponent implements OnInit {
                   case 6:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/colores/por/violeta.mp3', 'violeta.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/colores/por/violeta.mp3', 'violeta.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -499,7 +541,7 @@ export class LogedComponent implements OnInit {
                   case 1:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/por/leon.mp3', 'leon.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/por/leon.mp3', 'leon.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -507,7 +549,7 @@ export class LogedComponent implements OnInit {
                   case 2:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/por/perro.mp3', 'perro.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/por/perro.mp3', 'perro.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -515,7 +557,7 @@ export class LogedComponent implements OnInit {
                   case 3:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/por/gato.mp3', 'gato.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/por/gato.mp3', 'gato.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -523,7 +565,7 @@ export class LogedComponent implements OnInit {
                   case 4:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/por/elefante.mp3', 'elefante.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/por/elefante.mp3', 'elefante.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -531,7 +573,7 @@ export class LogedComponent implements OnInit {
                   case 5:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/por/hormiga.mp3', 'hormiga.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/por/hormiga.mp3', 'hormiga.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -539,7 +581,7 @@ export class LogedComponent implements OnInit {
                   case 6:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/animales/por/pajaro.mp3', 'pajaro.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/animales/por/pajaro.mp3', 'pajaro.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -555,7 +597,7 @@ export class LogedComponent implements OnInit {
                   case 1:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/por/uno.mp3', 'uno.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/por/uno.mp3', 'uno.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -563,7 +605,7 @@ export class LogedComponent implements OnInit {
                   case 2:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/por/dos.mp3', 'dos.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/por/dos.mp3', 'dos.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -571,7 +613,7 @@ export class LogedComponent implements OnInit {
                   case 3:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/por/tres.mp3', 'tres.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/por/tres.mp3', 'tres.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -579,7 +621,7 @@ export class LogedComponent implements OnInit {
                   case 4:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/por/cuatro.mp3', 'cuatro.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/por/cuatro.mp3', 'cuatro.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -587,7 +629,7 @@ export class LogedComponent implements OnInit {
                   case 5:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/por/cinco.mp3', 'cinco.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/por/cinco.mp3', 'cinco.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -595,7 +637,7 @@ export class LogedComponent implements OnInit {
                   case 6:
                   {
                     // Setup the new Howl.
-                    const sound = new Howl({src: ['../../assets/sonidos/numeros/por/seis.mp3', 'seis.mp3']});
+                    const sound = new Howl({src: ['../../assets/sonidos-v2/numeros/por/seis.mp3', 'seis.mp3']});
                     // Play the sound.
                     sound.play();
                     break;
@@ -688,6 +730,7 @@ export class LogedComponent implements OnInit {
       }
     }
   }
+
 }
 
 

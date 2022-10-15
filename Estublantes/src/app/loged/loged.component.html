@@ -1,15 +1,23 @@
 
 <body id="body">
   <ion-card id="card-main">
-    <ion-button class="btn-class" color="danger" (click)="goToChat4a()">
+    <!-- <ion-button class="btn-class" color="danger" (click)="goToChat4a()">
       AULA <br> 
       PPS <br> 4A
     </ion-button>
     <ion-button class="btn-class" color="warning" (click)="goToChat4b()">
       AULA <br> 
       PPS <br> 4B
-    </ion-button>
-  </ion-card>
+    </ion-button> -->
+  
+  <ion-row class="row-main-grid">
+    <img src="../../assets/aula-4a.jpg" class="btn-class" id="aula-4a" (click)="goToChat4a()">
+  </ion-row>
+  <ion-row class="row-main-grid">
+    <img src="../../assets/aula-4b.jpg" class="btn-class" id="aula-4b" (click)="goToChat4b()">
+  </ion-row>
+
+</ion-card>
 </body>
 
 <!-- fab placed to the bottom start -->

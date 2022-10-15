@@ -47,11 +47,11 @@ export class FirestoreService
     
     let referencia = ref(storage, `images/${usuarioEstructuradoRecibido.dni + "-" + fechaValidaActual + "-" + horaValidaActual}`);
 
-    uploadString(referencia, filePhoto.dataUrl,'data_url').then((snapshot)=>
+    uploadBytes(referencia, filePhoto).then((snapshot)=>
     {
       getDownloadURL(referencia).then(async (url)=>
       {
-          usuarioEstructuradoRecibido.foto = url;
+          usuarioEstructuradoRecibido.fotoFile = url;
           let newDocument = doc(db,"usuarios", newID.toString());
           await setDoc(newDocument,usuarioEstructuradoRecibido);
       });
@@ -117,5 +117,26 @@ export class FirestoreService
 
     console.log(flagMax);
     return flagMax;
+  }
+
+  public async userEstaRegistrado(mailRecibido:string)
+  {
+    let estaRegistrado:boolean = false;
+    
+    let usuariosDB = new Array();
+
+    //Obtengo los documentos de forma asincronica, con un await. Por cada documento creo un usuario le asigno los datos y lo guardo
+    // let cosaslindas = collection(db, "cosaslindas");
+    const querySnapshot = await getDocs(collection(db, "usuarios"));
+    
+    querySnapshot.forEach((doc) => 
+    {
+      if (doc.data()["mail"] == mailRecibido)
+      {
+        estaRegistrado = true;
+      }
+    });
+
+    return estaRegistrado;
   }
 }

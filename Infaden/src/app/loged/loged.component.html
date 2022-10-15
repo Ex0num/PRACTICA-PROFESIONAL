@@ -1,24 +1,10 @@
 
-    <ion-content id="body" color="dark">
-      <ion-card id="header-card">
-        <ion-list id="main-list">
-          <ion-item>
-            <ion-select #lenguaje placeholder="Idioma" id="item-lenguaje-list" (ionChange)="actualizarLenguaje(lenguaje.value)">
-              <ion-select-option value="español" id="español">🇦🇷</ion-select-option>
-              <ion-select-option value="portugues" id="portugues">🇧🇷</ion-select-option>
-              <ion-select-option value="ingles" id="ingles">🇺🇸</ion-select-option>
-            </ion-select>
-          </ion-item>
-          <ion-item>
-            <ion-select #tema placeholder="Tema" id="item-tema-list" (ionChange)="actualizarTema(tema.value)">
-              <ion-select-option value="animales" id="animales">🦁</ion-select-option>
-              <ion-select-option value="colores" id="colores">🔴</ion-select-option>
-              <ion-select-option value="numeros" id="numeros">🔢</ion-select-option>
-            </ion-select>
-          </ion-item>
-        </ion-list>
-      </ion-card>
-  
+    <ion-content id="body" color="tertiary">
+      
+      <ion-card style="background-color: white;">
+
+      <ion-card  id="header-card"></ion-card>
+
       <ion-card id="content-main-card">
         <ion-grid id="main-grid">
           <ion-col class="col-main-grid">
@@ -42,7 +28,6 @@
         </ion-grid>
       </ion-card>
 
-
       <ion-card id="content-main-card2">
         <ion-grid id="main-grid2">
 
@@ -65,6 +50,8 @@
         </ion-grid>
       </ion-card>
 
+      </ion-card>
+
     </ion-content>
       
 <!-- fab placed to the bottom start -->
@@ -72,4 +59,22 @@
   <ion-fab-button color="light">
     <ion-icon name="arrow-back-circle"></ion-icon>
   </ion-fab-button>
+</ion-fab>
+
+<ion-fab vertical="top" horizontal="start" edge slot="fixed" id="theme-selected">
+  <ion-fab-button color="light" id="theme-showed">🦁</ion-fab-button>
+  <ion-fab-list side="end">
+    <ion-fab-button color="light" (click)="actualizarTema('animales')">🦁</ion-fab-button>
+    <ion-fab-button color="light" (click)="actualizarTema('colores')">🔴</ion-fab-button>
+    <ion-fab-button color="light" (click)="actualizarTema('numeros')">🔢</ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+<ion-fab vertical="top" horizontal="end" edge slot="fixed" id="language-selected">
+  <ion-fab-button color="light" id="language-showed">🇪🇸</ion-fab-button>
+  <ion-fab-list side="start">
+    <ion-fab-button color="light" (click)="actualizarLenguaje('español')">🇪🇸</ion-fab-button>
+    <ion-fab-button color="light" (click)="actualizarLenguaje('portugues')">🇵🇹</ion-fab-button>
+    <ion-fab-button color="light" (click)="actualizarLenguaje('ingles')">🇬🇧</ion-fab-button>
+  </ion-fab-list>
 </ion-fab>

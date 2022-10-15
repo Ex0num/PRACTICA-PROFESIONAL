@@ -1,0 +1,42 @@
+<body id="body" *ngIf="spinnerMostrandose == false">
+  <ion-card>
+    <ion-card-header>
+      <ion-title id="header-main-tittle">Usted es {{rango}}</ion-title>
+    </ion-card-header>
+    <!-- <ion-button id="btn-subir-user" color="warning" >ALTA USUARIO</ion-button> -->
+  </ion-card>
+
+  <ion-content color="warning">
+
+    <ion-card id="main-container">
+      <ion-card id="main-card2">
+         
+          <ion-button id="btn-borrarCreditos" color="danger" (click)="limpiarCreditos()">Borrar créditos</ion-button>
+          <label id="lbl-warning">¡CUIDADO!</label>
+
+          <ion-button id="btn-creditoActual" readonly color="tertiary">Crédito actual <br><br> ${{creditoDelUser}}</ion-button>
+          
+          <p *ngIf="errorShow == true" id="p-errorAcreditando">
+            <label id="errorAcreditando">{{errorMessage}}</label>
+          </p>
+
+          <ion-button id="btn-cargarCredito"  color="tertiary" (click)="escanear()">Cargar crédito</ion-button>
+
+      </ion-card>
+    </ion-card>
+
+  </ion-content>
+</body>
+
+<ion-row *ngIf="spinnerMostrandose == true" class="item-spinner">
+  <ion-col>
+    <ion-spinner name="crescent"></ion-spinner>
+  </ion-col>
+</ion-row>
+
+<!-- fab placed to the bottom start -->
+<ion-fab class="redireccionador" vertical="bottom" horizontal="start" slot="fixed" (click)="logOut()">
+  <ion-fab-button color="dark">
+    <ion-icon name="arrow-back-circle"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

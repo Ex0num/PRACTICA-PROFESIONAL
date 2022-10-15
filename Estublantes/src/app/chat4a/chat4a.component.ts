@@ -43,8 +43,11 @@ export class Chat4aComponent implements OnInit
   flagOwnMessage = false;
   flagLoadingMessages = true;
 
+  unsuscriber:any;
+
   volver()
   {
+    this.unsuscriber();
     this.routerRecieved.navigate(['/loged']);
   }
 
@@ -107,7 +110,7 @@ export class Chat4aComponent implements OnInit
   {
       let newLastID = 0;
 
-      const unsubscribe = onSnapshot(collection(this.db, "Mensajes"), async () => 
+      this.unsuscriber = onSnapshot(collection(this.db, "Mensajes"), async () => 
       {
           // Respond to data
           if (this.flagLoadingMessages == false)
@@ -119,7 +122,7 @@ export class Chat4aComponent implements OnInit
               console.log("CREANDO BUBBLE PROPIA");
 
               let nuevoMensaje = new Mensaje(this.usuario,this.mensaje);
-              this.createOwnNewBubble(nuevoMensaje.texto,"Tú",nuevoMensaje.horaActual);
+              this.createOwnNewBubble(nuevoMensaje.texto,"Tú",nuevoMensaje.horaActual,nuevoMensaje.fechaActual);
             }
             else
             {
@@ -144,7 +147,7 @@ export class Chat4aComponent implements OnInit
                 {
                   let data = doc.data();
                   let mensajeNuevo = new Mensaje(data['usuario'],data['texto']);
-                  this.createNewBubble(mensajeNuevo.texto, mensajeNuevo.username, mensajeNuevo.horaActual);
+                  this.createNewBubble(mensajeNuevo.texto, mensajeNuevo.username, mensajeNuevo.horaActual, mensajeNuevo.fechaActual);
                 }
               });
             }
@@ -180,7 +183,7 @@ export class Chat4aComponent implements OnInit
     return flagMax;
   }
 
-  public createNewBubble(mensajeRecieved:string, usernameRecieved:string, horaActual:string)
+  public createNewBubble(mensajeRecieved:string, usernameRecieved:string, horaActual:string, fechaActual:string)
   {
     let listaMensajes = document.getElementById("chat-mensajes");
 
@@ -192,7 +195,7 @@ export class Chat4aComponent implements OnInit
     //Creo el nombre y la fecha y la asigno en un label
     //let horaActualCalculada = new Date();
     //let horaString = horaActualCalculada.toLocaleTimeString();
-    nuevaInfo.innerHTML = usernameRecieved  + " - " + horaActual;
+    nuevaInfo.innerHTML = usernameRecieved  + " - " + fechaActual + " - " + horaActual;
 
     //Creo el texto y le asigno el valor recibido
     let nuevoTexto = document.createElement("p");
@@ -213,14 +216,14 @@ export class Chat4aComponent implements OnInit
     nuevoMensaje.style.borderBottomRightRadius = "0px";
     nuevoMensaje.style.marginTop = "1rem";
     nuevoMensaje.style.fontFamily = "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
-    nuevoMensaje.style.fontSize = "19px";
-    nuevoMensaje.style.marginLeft = "3rem";
+    nuevoMensaje.style.fontSize = "16px";
+    nuevoMensaje.style.marginLeft = "0.5rem";
 
     console.log(nuevoMensaje);
     listaMensajes?.appendChild(nuevoMensaje);
   }
 
-  public createOwnNewBubble(mensajeRecieved:string, usernameRecieved:string, horaActual:string)
+  public createOwnNewBubble(mensajeRecieved:string, usernameRecieved:string, horaActual:string, fechaActual:string)
   {
     let listaMensajes = document.getElementById("chat-mensajes");
 
@@ -228,7 +231,7 @@ export class Chat4aComponent implements OnInit
     let nuevoMensaje = document.createElement("li");
 
     let nuevaInfo = document.createElement("p");
-    nuevaInfo.innerHTML = usernameRecieved  + " - " + horaActual;
+    nuevaInfo.innerHTML = usernameRecieved  + " - " + fechaActual + " - " + horaActual;
 
     //Creo el texto y le asigno el valor recibido
     let nuevoTexto = document.createElement("p");
@@ -247,8 +250,8 @@ export class Chat4aComponent implements OnInit
     nuevoMensaje.style.padding = "0.8rem";
     nuevoMensaje.style.marginTop = "1rem";
     nuevoMensaje.style.fontFamily = "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
-    nuevoMensaje.style.fontSize = "18px";
-    nuevoMensaje.style.marginRight = "3rem";
+    nuevoMensaje.style.fontSize = "16px";
+    nuevoMensaje.style.marginRight = "0.5rem";
 
     console.log(nuevoMensaje);
     listaMensajes?.appendChild(nuevoMensaje);

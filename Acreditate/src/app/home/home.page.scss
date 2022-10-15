@@ -1,0 +1,105 @@
+#body
+{
+    background-color: black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-card
+{
+    height: 97%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main2-card
+{
+    height: 97%;
+    background: #ff8f8f;
+    background: radial-gradient(circle, rgba(255,143,143,1) 16%, rgba(238,201,201,1) 53%, rgba(208,149,149,0.9192051820728291) 85%);
+    border: 1px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#row-fast-access
+{
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btnFastAccess
+{
+    margin-left: 12%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-card-2
+{
+    border-radius: 65px;
+    margin-top: 3rem;
+    height: 50%;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#card-main-content
+{
+    width: 100%;
+    border-radius: 40px;
+    margin-top: 48%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-card-header
+{
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#mail,#password
+{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: black;
+    margin-bottom: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#btnIngresar, #btnRegistrarse,#btnHacerMagia,#btnAdmin,#btnUsuario,#btnMal
+{
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#txtError 
+{
+  margin-top: 15px;
+  color: red;
+  margin-bottom: 3.5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#txtSatisfaccion
+{
+  margin-top: 15px;
+  color: green;
+  margin-bottom: 3.5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#img1-login, #img2-login , #img3-login
+{
+  width: 70px;
+  height: 80px;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}

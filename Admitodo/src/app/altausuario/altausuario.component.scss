@@ -48,6 +48,13 @@
     text-align: center;
 }
 
+#error-text
+{
+    color:  red;
+    margin-left: 23%;
+    text-align: center;
+}
+
 #card-content
 {
     text-align: center;
@@ -64,6 +71,7 @@
 
 .data-file
 {
+    border: 1px solid #6a487c;
     border-radius: 10px;
-    
+    margin: 0;
 }

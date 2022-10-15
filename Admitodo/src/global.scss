@@ -24,3 +24,10 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.scanner-ui { display: none; }
+.scanner-hide { visibility: visible; }
+
+body.qrscanner { background-color: transparent; }
+body.qrscanner .scanner-ui { display: block; }
+body.qrscanner .scanner-hide { visibility: hidden; }

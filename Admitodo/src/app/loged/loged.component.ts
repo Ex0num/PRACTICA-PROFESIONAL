@@ -4,6 +4,7 @@ import { getAuth, signOut } from "firebase/auth";
 import { HomePage } from '../home/home.page';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IonInfiniteScroll } from '@ionic/angular';
+import { FirestoreService } from '../Servicios/firestore.service';
 
 @Component({
   selector: 'app-loged',
@@ -14,10 +15,14 @@ export class LogedComponent implements OnInit {
 
   rango = "Usuario";
 
-  constructor(private routerRecieved:Router) {}
+  public usuariosLeidos:any;
+  public usuariosLeidosOrdenados:any;
+
+  constructor(private routerRecieved:Router, public srvFirebase:FirestoreService) 
+  {}
 
 
-  ngOnInit() 
+  async ngOnInit() 
   {
     const auth = getAuth();
     
@@ -43,6 +48,9 @@ export class LogedComponent implements OnInit {
     {
       this.routerRecieved.navigate(['/home']);
     }
+
+    this.usuariosLeidos = await this.srvFirebase.leerDBUsuarios();
+    this.usuariosLeidosOrdenados = this.usuariosLeidos.sort( (a,b)=> { if(a.nombre > b.nombre){return 1;}else{return -1}});
   }
 
 

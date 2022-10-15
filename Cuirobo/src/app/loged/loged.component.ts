@@ -193,7 +193,21 @@ export class LogedComponent implements OnInit {
       this.subscription.unsubscribe();
       this.audio.pause();
     }
-   
+    else
+    {
+      this.flashlight.switchOn();
+      this.vibration.vibrate(5000);
+      this.audio.src = this.audioHorizontal;
+      this.audio.play();
+
+      setTimeout(() => 
+      {
+        this.primerIngresoFlash = false;
+        this.flashlight.switchOff();
+      }, 5000);
+    }
+
+    this.clave = "";
   }
 
 }
