@@ -8,7 +8,7 @@
   </ion-card>
 
   <ion-content color="medium">
-    <ion-card id="main-container">
+    <ion-card id="main-container" *ngIf="spinnerMostrandose == false">
           <ion-list id="item-list">
             <ion-item class="itemloaded" color="medium" *ngFor="let cosaLinda of publicacionesCosasLindas; let i = index"> 
               <p class="info-container">
@@ -22,5 +22,12 @@
             </ion-item>
           </ion-list>
     </ion-card>
+
+    <ion-row *ngIf="spinnerMostrandose == true" class="item-spinner">
+      <ion-col>
+        <ion-spinner name="crescent" id="loader-spinner" color="light"></ion-spinner>
+      </ion-col>
+    </ion-row>
+
   </ion-content>
 </body>

@@ -14,8 +14,14 @@ export class CosasfeasComponent implements OnInit
 
   publicacionesCosasFeas:any;
 
+  spinnerMostrandose = true;
+
   async ngOnInit() 
   {
+    //--------SPINNER----------------------------------------------
+    setTimeout( ()=> { this.spinnerMostrandose = false}, 2000);
+    //-
+
     this.publicacionesCosasFeas = await this.photoSrv.leerDBCosasFeas();
 
     console.log(this.publicacionesCosasFeas);

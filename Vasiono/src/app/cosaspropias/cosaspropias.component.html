@@ -7,7 +7,7 @@
   </ion-card>
 
   <ion-content color="medium">
-    <ion-card style="margin-top: 1rem; border-radius: 10px;" id="main-own-card">
+    <ion-card style="margin-top: 1rem; border-radius: 10px;" id="main-own-card" *ngIf="spinnerMostrandose == false">
 
       <div id="cosasPropias">
         
@@ -51,6 +51,13 @@
 
       </div>
     </ion-card>
+
+    <ion-row *ngIf="spinnerMostrandose == true" class="item-spinner">
+      <ion-col>
+        <ion-spinner name="crescent" id="loader-spinner" color="light"></ion-spinner>
+      </ion-col>
+    </ion-row>
+  
   </ion-content>
   
 </body>

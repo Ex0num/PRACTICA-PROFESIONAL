@@ -15,8 +15,14 @@ export class CosaspropiasComponent implements OnInit {
   public cosasFeasDelUser;
   public cosasLindasDelUser;
 
+  spinnerMostrandose = true;
+
   async ngOnInit() 
   {
+      //--------SPINNER----------------------------------------------
+      setTimeout( ()=> { this.spinnerMostrandose = false}, 2000);
+      //-
+
     let userLoged = this.authSrv.userLogedmail;
 
     if (userLoged != undefined)

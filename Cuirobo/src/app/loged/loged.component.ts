@@ -23,8 +23,15 @@ export class LogedComponent implements OnInit {
     private screenOrientation: ScreenOrientation,
     private deviceMotion: DeviceMotion){}
 
+  spinnerMostrandose = true;
+
   ngOnInit() 
   {
+
+    //--------SPINNER----------------------------------------------
+    setTimeout( ()=> { this.spinnerMostrandose = false}, 2000);
+    //-------------------------------------------------------------
+
     const auth = getAuth();
     
     try

@@ -31,7 +31,15 @@ export class Chat4aComponent implements OnInit
     this.recieveChanges();
   }
 
-  ngOnInit() {}
+  spinnerMostrandose = true;
+
+  ngOnInit() 
+  {
+    //--------SPINNER----------------------------------------------
+    setTimeout( ()=> { this.spinnerMostrandose = false}, 2000);
+    //-------------------------------------------------------------
+
+  }
 
   db = getFirestore(app);
 

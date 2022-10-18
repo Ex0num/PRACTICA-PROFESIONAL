@@ -23,8 +23,14 @@ export class CosaslindasComponent implements OnInit
 
   publicacionesCosasLindas:any;
 
+  spinnerMostrandose = true;
+
   async ngOnInit() 
   {
+    //--------SPINNER----------------------------------------------
+    setTimeout( ()=> { this.spinnerMostrandose = false}, 2000);
+    //-
+
     this.publicacionesCosasLindas = await this.photoSrv.leerDBCosasLindas();
 
     console.log(this.publicacionesCosasLindas);

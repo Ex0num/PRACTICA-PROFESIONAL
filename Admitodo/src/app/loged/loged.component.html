@@ -7,7 +7,13 @@
     <ion-button id="btn-subir-user" color="warning" (click)="goToAltaUser()">ALTA USUARIO</ion-button>
   </ion-card>
 
-  <ion-content color="warning">
+  <ion-row *ngIf="spinnerMostrandose == true" class="item-spinner">
+    <ion-col>
+      <ion-spinner name="crescent" id="loader-spinner"></ion-spinner>
+    </ion-col>
+  </ion-row>
+
+  <ion-content color="warning" *ngIf="spinnerMostrandose == false">
 
     <ion-card id="main-container">
       <ion-card id="main-card2" color="warning">

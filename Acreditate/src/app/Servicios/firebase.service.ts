@@ -1,22 +1,23 @@
 import { Injectable } from '@angular/core';
 import { initializeApp } from 'firebase/app';
 import { collection, doc, Firestore, getDocs, getFirestore, setDoc } from 'firebase/firestore/lite';
+import { db, usuarios } from '../home/home.page';
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyBOwEbZxMh6w8rgEhCMI8YPst6K4R4EZrA",
-  authDomain: "acreditate-glg.firebaseapp.com",
-  projectId: "acreditate-glg",
-  storageBucket: "acreditate-glg.appspot.com",
-  messagingSenderId: "442045055982",
-  appId: "1:442045055982:web:94c6f1d9efc6bab552c4ff"
-};
+// // Your web app's Firebase configuration
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBOwEbZxMh6w8rgEhCMI8YPst6K4R4EZrA",
+//   authDomain: "acreditate-glg.firebaseapp.com",
+//   projectId: "acreditate-glg",
+//   storageBucket: "acreditate-glg.appspot.com",
+//   messagingSenderId: "442045055982",
+//   appId: "1:442045055982:web:94c6f1d9efc6bab552c4ff"
+// };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+// export const app = initializeApp(firebaseConfig);
 
-export const db = getFirestore(app);
-export const usuarios = collection(db, "usuarios");
+// export const db = getFirestore(app);
+// export const usuarios = collection(db, "usuarios");
 
 @Injectable({
   providedIn: 'root'

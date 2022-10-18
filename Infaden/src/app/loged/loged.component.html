@@ -5,7 +5,7 @@
 
       <ion-card  id="header-card"></ion-card>
 
-      <ion-card id="content-main-card">
+      <ion-card id="content-main-card" *ngIf="spinnerMostrandose == false">
         <ion-grid id="main-grid">
           <ion-col class="col-main-grid">
             <ion-row class="row-main-grid">
@@ -28,7 +28,7 @@
         </ion-grid>
       </ion-card>
 
-      <ion-card id="content-main-card2">
+      <ion-card id="content-main-card2" *ngIf="spinnerMostrandose == false">
         <ion-grid id="main-grid2">
 
           <ion-col class="col-main-grid2">
@@ -51,6 +51,12 @@
       </ion-card>
 
       </ion-card>
+
+      <ion-row *ngIf="spinnerMostrandose == true" class="item-spinner">
+        <ion-col>
+          <ion-spinner name="crescent" id="loader-spinner" color="light"></ion-spinner>
+        </ion-col>
+      </ion-row>
 
     </ion-content>
       

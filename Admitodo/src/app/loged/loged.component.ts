@@ -21,9 +21,14 @@ export class LogedComponent implements OnInit {
   constructor(private routerRecieved:Router, public srvFirebase:FirestoreService) 
   {}
 
+  spinnerMostrandose = true;
 
   async ngOnInit() 
   {
+    //--------SPINNER----------------------------------------------
+    setTimeout( ()=> { this.spinnerMostrandose = false}, 2000);
+    //-------------------------------------------------------------
+
     const auth = getAuth();
     
     try

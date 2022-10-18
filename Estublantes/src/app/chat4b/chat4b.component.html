@@ -6,7 +6,7 @@
     <ion-button id="comeback-button" color="warning" (click)="volver()">Volver</ion-button>
   </ion-card>
 
-  <ion-card id="card-container-chat">
+  <ion-card id="card-container-chat" *ngIf="spinnerMostrandose == false">
     <!-- <ion-card-header id="card-header-chat">
       <ion-card-title>¡Hola!, {{usuario}}</ion-card-title>
     </ion-card-header> -->
@@ -27,4 +27,11 @@
       <ion-button id="btn-send" color="warning" (click)="sendMessage()">Enviar</ion-button>
   </ion-content>
   </ion-card>
+
+  <ion-row *ngIf="spinnerMostrandose == true" class="item-spinner">
+    <ion-col>
+      <ion-spinner name="crescent" id="loader-spinner" color="light"></ion-spinner>
+    </ion-col>
+  </ion-row>
+
 </body>

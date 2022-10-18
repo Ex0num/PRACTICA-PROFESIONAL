@@ -32,6 +32,6 @@ export class AppComponent {
       {
         this.cargarTerminada = true;
       }
-    },4000)
+    },2000)
   }
 }

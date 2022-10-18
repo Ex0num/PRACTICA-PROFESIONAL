@@ -1,4 +1,4 @@
-<body id="body" *ngIf="spinnerMostrandose == false">
+<body id="body">
   <ion-card>
     <ion-card-header>
       <ion-title id="header-main-tittle">Usted es {{rango}}</ion-title>
@@ -8,7 +8,13 @@
 
   <ion-content color="warning">
 
-    <ion-card id="main-container">
+    <ion-row *ngIf="spinnerMostrandose == true" class="item-spinner">
+      <ion-col>
+        <ion-spinner name="crescent" id="loader-spinner"></ion-spinner>
+      </ion-col>
+    </ion-row>
+
+    <ion-card id="main-container" *ngIf="spinnerMostrandose == false">
       <ion-card id="main-card2">
          
           <ion-button id="btn-borrarCreditos" color="danger" (click)="limpiarCreditos()">Borrar créditos</ion-button>
@@ -27,12 +33,6 @@
 
   </ion-content>
 </body>
-
-<ion-row *ngIf="spinnerMostrandose == true" class="item-spinner">
-  <ion-col>
-    <ion-spinner name="crescent"></ion-spinner>
-  </ion-col>
-</ion-row>
 
 <!-- fab placed to the bottom start -->
 <ion-fab class="redireccionador" vertical="bottom" horizontal="start" slot="fixed" (click)="logOut()">
